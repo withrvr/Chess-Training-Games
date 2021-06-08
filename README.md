@@ -13,5 +13,4 @@ So started creating a project on Chess Training
 
 -   [@withrvr on chess.com](https://www.chess.com/member/withrvr)
 -   [chessboard js api](https://chessboardjs.com/)
-
-### Currently Under Development
+-   [Final Result](https://chess-training-games.netlify.app/)
