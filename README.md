@@ -12,5 +12,5 @@ So started creating a project on Chess Training
 # Links
 
 -   [@withrvr on chess.com](https://www.chess.com/member/withrvr)
--   [chessboard js api](https://chessboardjs.com/)
+-   [Chessboard.jsx](https://chessboardjsx.com/)
 -   [Final Result](https://chess-training-games.netlify.app/)
