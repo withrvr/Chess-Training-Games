@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default class Game1 extends React.Component {
@@ -7,7 +8,7 @@ export default class Game1 extends React.Component {
 	}
 	render() {
 		return (
-			<div className="container mb-5 mt-3 text-center">
+			<Container className="mb-5 mt-3 text-center">
 				<h4>
 					Game 2 <br /> Correct Square
 				</h4>
@@ -18,7 +19,7 @@ export default class Game1 extends React.Component {
 				<div className="mt-4">
 					<Link to="/">Go to Home Page</Link>
 				</div>
-			</div>
+			</Container>
 		);
 	}
 }

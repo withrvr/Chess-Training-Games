@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, Col, Container, ProgressBar } from "react-bootstrap";
 
 export default class Game1 extends React.Component {
 	state = {
@@ -62,13 +63,16 @@ export default class Game1 extends React.Component {
 		const incorrect_guess_perc = (incorrect_guess / total_guess) * 100;
 
 		return (
-			<div className="vh-100 p-4">
-				<div className="text-center">
+			<Container className="mt-3 text-center">
+				{/* heading and start stop btn */}
+				<header>
 					<h3>
-						Game1 <br /> Dark or Light
+						<div>Game1</div>
+						<div>Dark or Light</div>
 					</h3>
-					<button
-						className="btn btn-outline-primary my-3"
+					<Button
+						variant="outline-primary"
+						className="my-3"
 						onClick={() =>
 							this.setState({
 								started: !this.state.started,
@@ -78,85 +82,78 @@ export default class Game1 extends React.Component {
 						&nbsp;&nbsp;
 						{this.state.started ? <>Stop</> : <>Start</>}
 						&nbsp;&nbsp;
-					</button>
+					</Button>
+				</header>
 
-					<div>
-						{this.state.started ? (
-							<>
-								<h1 className="my-3">
-									{this.state.ran_square}
-								</h1>
+				{/* main game playground */}
+				<main>
+					{this.state.started ? (
+						<>
+							<h1 className="my-3">{this.state.ran_square}</h1>
 
-								<div className="d-flex justify-content-center">
-									{/* Dark */}
-									<div
-										onClick={() =>
-											this.validate_if_correct("dark")
-										}
-										className="p-5"
-										style={{
-											backgroundColor: "#B58863",
-										}}
-									></div>
-									{/*space*/}
-									<div className="p-3"></div>
-									{/* Light */}
-									<div
-										onClick={() =>
-											this.validate_if_correct("light")
-										}
-										className="p-5"
-										style={{
-											backgroundColor: "#F0D8B4",
-										}}
-									></div>
-								</div>
-
-								<div className="mt-5 col-md-6 col mx-auto">
-									<div
-										className="progress progress-bar-striped progress-bar-animated"
-										style={{
-											height: "1.3rem",
-										}}
-									>
-										<div
-											role="progressbar"
-											className="progress-bar bg-success"
-											style={{
-												width: `${correct_guess_perc}%`,
-											}}
-										>
-											{/* {correct_guess ? (
-												<>{correct_guess}</>
-											) : (
-												<></>
-											)} */}
-										</div>
-										<div
-											role="progressbar"
-											className="progress-bar bg-danger"
-											style={{
-												width: `${incorrect_guess_perc}%`,
-											}}
-										>
-											{/* {incorrect_guess ? (
-												<>{incorrect_guess}</>
-											) : (
-												<></>
-											)} */}
-										</div>
-									</div>
-								</div>
-							</>
-						) : (
-							<div>
-								{/* You Can use your Keyboards <br />
-								Left and Right arrow keys also */}
+							{/* dark or light blocks */}
+							<div className="d-flex justify-content-center">
+								{/* Dark */}
+								<div
+									onClick={() =>
+										this.validate_if_correct("dark")
+									}
+									className="p-5"
+									style={{
+										backgroundColor: "#B58863",
+									}}
+								></div>
+								{/*space*/}
+								<div className="p-3"></div>
+								{/* Light */}
+								<div
+									onClick={() =>
+										this.validate_if_correct("light")
+									}
+									className="p-5"
+									style={{
+										backgroundColor: "#F0D8B4",
+									}}
+								></div>
 							</div>
-						)}
-					</div>
-				</div>
-			</div>
+
+							{/* Progress Bar */}
+							<Col md={6} className="mt-5 mx-auto">
+								<ProgressBar
+									striped
+									animated
+									style={{
+										height: "1.4rem",
+									}}
+								>
+									<ProgressBar
+										variant="success"
+										label={
+											correct_guess ? correct_guess : ""
+										}
+										style={{
+											width: `${correct_guess_perc}%`,
+										}}
+									/>
+									<ProgressBar
+										label={
+											incorrect_guess
+												? incorrect_guess
+												: ""
+										}
+										variant="danger"
+										style={{
+											width: `${incorrect_guess_perc}%`,
+										}}
+									/>
+								</ProgressBar>
+							</Col>
+						</>
+					) : (
+						<></>
+					)}
+				</main>
+			</Container>
 		);
 	}
 }

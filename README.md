@@ -35,7 +35,7 @@ So started creating a project on Chess Training
 
 -   [Final Result](https://chess-training-games.netlify.app/)
 -   [@withrvr on chess.com](https://www.chess.com/member/withrvr)
--   [Technology Used](./Developer_Guide.md)
+-   [Technology Used](./Developer_Guide.md#technology)
 
 # Badge
 
