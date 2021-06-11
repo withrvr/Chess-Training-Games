@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./Components/Home";
-import Error404 from "./Components/Error404";
+import Home from "./Components/Other/Home";
+import Error404 from "./Components/Other/Error404";
 
 import Game1 from "./Components/Games/Game1";
 import Game2 from "./Components/Games/Game2";

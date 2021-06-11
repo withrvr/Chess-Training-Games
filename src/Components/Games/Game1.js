@@ -1,30 +1,19 @@
 import React from "react";
 import { Button, Col, Container, ProgressBar } from "react-bootstrap";
+import { random_square_name } from "../Other/Random";
 
 export default class Game1 extends React.Component {
 	state = {
 		started: false,
-		ran_square: "??",
+		ran_square: random_square_name(),
 		correct_guess: 0,
 		incorrect_guess: 0,
 	};
+
 	componentDidMount() {
 		document.title = "Game 1 - Dark or Light";
-		this.setState({
-			ran_square: this.random_square_name(),
-		});
 	}
 
-	random_number(min, max) {
-		return Math.floor(Math.random() * (max - min) + min);
-	}
-	random_square_name() {
-		const letters = "abcdefgh";
-		const numbers = "12345678";
-		const letter = letters.charAt(this.random_number(0, letters.length));
-		const number = numbers.charAt(this.random_number(0, numbers.length));
-		return letter + number;
-	}
 	validate_if_correct(user_color) {
 		const ran_square = this.state.ran_square;
 		const letter = ran_square[0];
@@ -43,12 +32,12 @@ export default class Game1 extends React.Component {
 		if (real_color === user_color) {
 			this.setState({
 				correct_guess: this.state.correct_guess + 1,
-				ran_square: this.random_square_name(),
+				ran_square: random_square_name(),
 			});
 		} else {
 			this.setState({
 				incorrect_guess: this.state.incorrect_guess + 1,
-				ran_square: this.random_square_name(),
+				ran_square: random_square_name(),
 			});
 		}
 	}
@@ -67,7 +56,7 @@ export default class Game1 extends React.Component {
 				{/* heading and start stop btn */}
 				<header>
 					<h3>
-						<div>Game1</div>
+						<div>Game 1</div>
 						<div>Dark or Light</div>
 					</h3>
 					<Button
