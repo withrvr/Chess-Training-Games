@@ -1,11 +1,12 @@
 # Run
 
+<!-- `npm run dev` -->
 ```
-For Local Development
-Use npm package manager Only
-No Yarn for now
+if first time
+yarn
 
-npm start
+to start the development on local server
+yarn dev
 ```
 
 # Technology
