@@ -4,7 +4,7 @@ import { random_square_name } from "../components/Random";
 import Head from "next/head";
 import Image from "next/image";
 
-// replacement for this "import Chessboard from "chessboardjsx";" because it does not work
+// replacement for this "import Chessboard from "chessboardjsx";" because it does not work in nextjs
 import dynamic from 'next/dynamic';
 const Chessboard = dynamic(() => import('chessboardjsx'), {
 	ssr: false  // <- this do the magic ;)

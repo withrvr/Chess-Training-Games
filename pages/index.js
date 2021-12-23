@@ -21,15 +21,18 @@ export default class Home extends Component {
 							width={200}
 							height={200}
 						/>
-						<h1>Chess Training Games</h1>
+						<h1 className="text-3xl">Chess Training Games</h1>
 					</div>
 					{/* links of the games */}
 					<div className="grid grid-col-1 gap-2 mx-auto my-3 ">
-						<Link href="/game1" className="btn btn-outline-primary">
-							Dark or Light
+						<Link href="/game1">
+							<a className="btn"> Dark or Light </a>
 						</Link>
 						<Link href="/game2" className="btn btn-outline-primary">
-							Correct Square
+							<a className="btn"> Correct Square </a>
+						</Link>
+						<Link href="/game3" className="btn btn-outline-primary">
+							<a className="btn"> game 3 </a>
 						</Link>
 					</div>
 					{/* footer */}

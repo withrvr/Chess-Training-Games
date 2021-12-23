@@ -11,14 +11,14 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"next": "^12.0.4",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		
-		"prop-types": "^15.7.2",
-
 		"chance": "^1.1.7",
-		"chessboardjsx": "^2.4.7"
+		"chess.js": "^0.12.0",
+		"chessboardjsx": "^2.4.7",
+		"next": "^12.0.4",
+		"nextjs-progressbar": "^0.0.13",
+		"prop-types": "^15.7.2",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.2.6",
