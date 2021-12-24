@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://chess-training-games.netlify.app/">
-    <img src="./public/logo.svg" alt="chess logo" width="200">
+  <a href="https://chess-training-games.vercel.app">
+    <img src="./public/favicon.svg" alt="chess logo" width="200">
   </a>
 </p>
 
@@ -33,10 +33,16 @@ So started creating a project on Chess Training
 
 # Links
 
--   [Final Result](https://chess-training-games.netlify.app/)
+-   [Final Result / New Website][new-nextjs-site]
+-   [Old Side / React / game-1/2][old-reactjs-site]
 -   [@withrvr on chess.com](https://www.chess.com/member/withrvr)
 -   [Technology Used](./Developer_Guide.md#technology)
 
-# Badge
+<!-- # Badge
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e60cbbc7-c396-45bd-819c-6e04eb418757/deploy-status)](https://app.netlify.com/sites/chess-training-games/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e60cbbc7-c396-45bd-819c-6e04eb418757/deploy-status)](https://app.netlify.com/sites/chess-training-games/deploys) -->
+
+<!--- ............ declaration of variables ............ -->
+
+[old-reactjs-site]: https://chess-training-games.netlify.app/
+[new-nextjs-site]: https://chess-training-games.vercel.app/
