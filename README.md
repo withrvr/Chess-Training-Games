@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://chess-training-games.vercel.app">
+  <a href="https://chess-training-games.netlify.app/">
     <img src="./public/favicon.svg" alt="chess logo" width="200">
   </a>
 </p>
@@ -33,10 +33,10 @@ So started creating a project on Chess Training
 
 # Links
 
--   [Final Result / New Website][new-nextjs-site]
--   [Old Side / React / game-1/2][old-reactjs-site]
+-   [Final Result / Old Side / React / Game-1/2][old-reactjs-site]
 -   [@withrvr on chess.com](https://www.chess.com/member/withrvr)
 -   [Technology Used](./Developer_Guide.md#technology)
+-   [Under development / New Website / Next-Tailwind / Game-3/4][new-nextjs-site]
 
 <!-- # Badge
 
